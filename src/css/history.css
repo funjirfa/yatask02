@@ -1,0 +1,107 @@
+.history_header {
+  grid-area: header;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history_header-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+.history_builds-btn,
+.history_settings-btn {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+  color: #000000;
+  background: #e6e6e6;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.history_show-btn {
+  display: block;
+  padding: 5px 20px;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+  color: #000000;
+  background: #e6e6e6;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.history_settings-btn {
+  margin-left: 5px;
+}
+
+.history_builds-btn span {
+  margin-left: 3px;
+}
+
+.history_show-btn,
+.history_builds-btn:hover,
+.history_settings-btn:hover {
+  cursor: pointer;
+  background: #d8d8d8;
+}
+
+.history_show-btn,
+.history_builds-btn:focus,
+.history_settings-btn:focus {
+  cursor: pointer;
+  border: 2px solid #b3b3b3;
+}
+
+.history_builds {
+  grid-area: content;
+}
+
+@media (min-width: 501px) {
+  .history_builds-btn {
+    width: 95px;
+  }
+
+  .history_show-btn {
+    width: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .history_header-title {
+    width: 250px;
+  }
+
+  .history_builds-btn {
+    width: 28px;
+  }
+
+  .history_builds-btn span {
+    display: none;
+  }
+
+  .history_show-btn {
+    width: 100%;
+    padding: 5px 0;
+  }
+}

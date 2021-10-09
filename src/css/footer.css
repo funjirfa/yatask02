@@ -1,0 +1,23 @@
+footer {
+  grid-area: footer;
+}
+
+.footer_label-link {
+  margin-left: 10px;
+}
+
+.footer_label-link:first-child {
+  margin-left: 0;
+}
+
+.footer_label-link:hover {
+  cursor: pointer;
+  color: #e00000;
+}
+
+@media (max-width: 500px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

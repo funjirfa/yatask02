@@ -1,0 +1,63 @@
+header {
+  grid-area: header;
+}
+
+.header-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  color: #7f8285;
+}
+
+.header_settings-btn {
+  display: block;
+  width: 87px;
+  height: 28px;
+  line-height: 28px;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+  color: #000000;
+  background: #e6e6e6;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header_settings-btn:hover {
+  cursor: pointer;
+  background: #d8d8d8;
+}
+
+.header_settings-btn:focus {
+  cursor: pointer;
+  border: 2px solid #b3b3b3;
+}
+
+.header_settings-btn img {
+  margin-right: 5px;
+}
+
+@media (min-width: 501px) {
+  .header_settings-btn {
+    width: 87px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header_settings-btn {
+    width: 28px;
+  }
+
+  .header_settings-btn img {
+    margin-right: 0;
+  }
+
+  .header_settings-btn span {
+    display: none;
+  }
+}
